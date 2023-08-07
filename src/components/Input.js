@@ -1,9 +1,9 @@
 import React from 'react';
-import { Button as MUIButton } from '@mui/material';
+import { Button } from '@mui/material';
 
-function Button(props) {
+function Input(props) {
   return (
-    <MUIButton
+    <Button
       variant={props.variant || 'contained'}
       disabled={props.disabled}
       onClick={props.onClick}
@@ -15,8 +15,8 @@ function Button(props) {
       {...props}
     >
       {props.text}
-    </MUIButton>
+    </Button>
   );
 }
 
-export default Button;
+export default Input;
